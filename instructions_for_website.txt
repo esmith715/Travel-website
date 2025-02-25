@@ -1,0 +1,14 @@
+in order for the website to work off my own compouter 
+
+i need to first create two terminals 
+
+1. cd travel-website
+2. cd backend
+
+for the travel website:
+
+npm run dev
+
+for the backend: 
+
+node server.js

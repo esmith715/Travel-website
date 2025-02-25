@@ -1,0 +1,31 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About_me from './pages/About_me';
+import FAQ from './pages/FAQ';
+import Eiffel_tower from './pages/Eiffel_tower/Eiffel_tower';
+import Colosseum from './pages/Colosseum/Colosseum';
+import Great_wall from './pages/Great_wall/Great_wall';
+import Machu_picchu from './pages/Machu_picchu/Machu_picchu';
+import Grand_canyon from './pages/Grand_canyon';
+
+
+
+const App = () => {
+  return (
+    <div>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/about_me" element={<About_me />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/eiffel_tower" element={<Eiffel_tower />} />
+        <Route path="/colosseum" element={<Colosseum />} />
+        <Route path="/great_wall" element={<Great_wall />} />
+        <Route path="/machu_picchu" element={<Machu_picchu />} />
+        <Route path="/grand_canyon" element={<Grand_canyon />} />
+      </Routes>
+    </div>
+  );
+}
+
+export default App;

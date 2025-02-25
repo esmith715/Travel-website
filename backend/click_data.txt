@@ -1,0 +1,2 @@
+{"link":"/eiffel_tower","count":4}
+{"link":"/colosseum","count":7}

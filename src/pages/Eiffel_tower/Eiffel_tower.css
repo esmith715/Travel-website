@@ -1,0 +1,72 @@
+.background-container {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Ensure the content is centered vertically */
+    text-align: center; /* Center-align text */
+}
+
+.eiffel-text {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+.eiffel-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.eiffel-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Center-align text */
+}
+
+.description h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left; /* Align list items to the left */
+    margin: 0 auto; /* Center the list */
+    display: inline-block; /* Make the list inline-block to center it */
+}
+
+.description li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.description h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #333;
+}
