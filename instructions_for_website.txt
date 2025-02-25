@@ -12,3 +12,41 @@ npm run dev
 for the backend: 
 
 node server.js
+
+
+instructions to push to github:
+
+Step 1: Stage Your Changes
+First, you need to stage the changes you have made. This tells Git which changes you want to include in the next commit.
+
+The . stages all the changes in the current directory and its subdirectories. If you want to stage specific files, you can replace . with the file paths.
+
+Step 2: Commit Your Changes
+Next, you need to commit the staged changes with a descriptive commit message.
+
+Replace "Your commit message" with a brief description of the changes you made. For example:
+
+Step 3: Push Your Changes
+Finally, push the committed changes to the remote repository on GitHub.
+
+If your default branch is master instead of main, use:
+
+Summary of Commands
+Stage Changes:
+
+Commit Changes:
+
+Push Changes:
+
+Example Workflow
+Here is an example workflow for making changes and pushing them to your repository:
+
+Make Changes: Edit your files and save the changes.
+
+Stage Changes:
+
+Commit Changes:
+
+Push Changes:
+
+By following these steps, you can stage, commit, and push your changes to your GitHub repository.
