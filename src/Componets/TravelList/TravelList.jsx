@@ -60,7 +60,7 @@ const TravelList = () => {
       </div>
 
       <div className="ListItem"> 
-        <Link to="/great_wall">
+        <Link to="/great_wall" onClick={() => handleLinkClick('/great_wall')}>
           <img src={great_wall} alt=''></img> {/*Great Wall */}
           {/*Got the image for free from https://pixabay.com/photos/great-wall-of-china-mountains-8191166/ */}  
           <div className="caption">

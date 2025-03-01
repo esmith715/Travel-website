@@ -43,10 +43,10 @@ Here is an example workflow for making changes and pushing them to your reposito
 
 Make Changes: Edit your files and save the changes.
 
-Stage Changes:
+Stage Changes: git add .
 
-Commit Changes:
+Commit Changes: git comit -m "your comit message"
 
-Push Changes:
+Push Changes: git push -u origin main
 
 By following these steps, you can stage, commit, and push your changes to your GitHub repository.
