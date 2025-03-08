@@ -7,7 +7,7 @@ import Eiffel_tower from './pages/Eiffel_tower/Eiffel_tower';
 import Colosseum from './pages/Colosseum/Colosseum';
 import Great_wall from './pages/Great_wall/Great_wall';
 import Machu_picchu from './pages/Machu_picchu/Machu_picchu';
-import Grand_canyon from './pages/Grand_canyon';
+import Grand_canyon from './pages/Grand_canyon/Grand_canyon';
 
 
 

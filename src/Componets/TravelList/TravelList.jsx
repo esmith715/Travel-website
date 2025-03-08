@@ -70,7 +70,7 @@ const TravelList = () => {
       </div>
 
       <div className="ListItem"> 
-        <Link to="/machu_picchu">
+        <Link to="/machu_picchu" onClick={() => handleLinkClick('/machu_picchu')}>
           <img src={machu_picchu} alt=''></img> {/*Machu Picchu */}
           {/*Got the image for free from https://www.pexels.com/photo/photo-of-machu-picchu-2929906/ */}  
           <div className="caption">
@@ -80,7 +80,7 @@ const TravelList = () => {
       </div>
 
       <div className="ListItem"> 
-        <Link to="/grand_canyon">
+        <Link to="/grand_canyon" onClick={() => handleLinkClick('/grand_canyon')}>
           <img src={grand_canyon} alt=''></img> {/*Grand Canyon */}
           {/*Got the image for free from https://unsplash.com/photos/brown-rocky-mountain-under-white-clouds-during-daytime-ZZnH4GOzDgc */}  
           <div className="caption">
@@ -91,7 +91,7 @@ const TravelList = () => {
 
       <div className="ListItem"> 
         <Link to="/great_wall">
-          <img src={great_wall} alt=''></img> {/*Great Wall */}
+          <img src={great_wall} alt=''></img> {/*Santorini Greece*/}
           {/*Got the image for free from https://pixabay.com/photos/great-wall-of-china-mountains-8191166/ */}  
           <div className="caption">
             <p>Great Wall, Beijing, China</p>

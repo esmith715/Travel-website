@@ -15,6 +15,7 @@ const EiffelTower = () => {
     <div>
       <Navbar />
       <div className='background-container' style={{ backgroundImage: `linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(${french_wallpaper})` }}>
+        {/*Got the image from here https://pngtree.com/freebackground/vector-cartoon-france-sights-and-objects-background-or-pattern-illustration_1831726.html */}
         <div className="eiffel-text">
           <h1>Welcome to the Eiffel Tower!</h1>
           <p>Please have fun exploring.</p>

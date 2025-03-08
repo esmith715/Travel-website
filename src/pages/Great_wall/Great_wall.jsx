@@ -3,7 +3,7 @@ import Navbar from '../../Componets/NavBar/Navbar';
 import './Great_wall.css'
 import TravelList from '../../Componets/TravelList/TravelList';
 import Title from '../../Componets/Title/Title';
-import french_wallpaper from '../../assets/french_wallpaper.png'; // Import the background image
+import great_wall_back from '../../assets/great_wall_back.png'; // Import the background image
 
 const Great_wall = () => {
   useEffect(() => {
@@ -15,7 +15,8 @@ const Great_wall = () => {
       <Navbar></Navbar>
 
 
-      <div className='background-container' style={{ backgroundImage: `linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(${french_wallpaper})` }}>
+      <div className='background-container' style={{ backgroundImage: `linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(${great_wall_back})` }}>
+        {/*Got the image for the background here https://stock.adobe.com/search?k=great+wall+of+china&asset_id=51068024 */}
         <div className="eiffel-text">
           <h1>Welcome to the Great Wall of China!</h1>
           <p>Please have fun exploring.</p>

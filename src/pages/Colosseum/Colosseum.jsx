@@ -14,6 +14,7 @@ const Colosseum = () => {
     <div>
       <Navbar></Navbar>
       <div className='background-container' style={{ backgroundImage: `linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(${col_background})` }}>
+        {/*Got the image for the background here https://www.pexels.com/photo/colosseum-italy-1797158/ */}
         <div className="eiffel-text">
           <h1>Welcome to the Colosseum of Rome!</h1>
           <p>Please have fun exploring.</p>
