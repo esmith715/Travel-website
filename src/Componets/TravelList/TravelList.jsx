@@ -6,6 +6,7 @@ import colosseum from '../../assets/colosseum.png'
 import great_wall from '../../assets/Great_wall.png'
 import machu_picchu from '../../assets/machu_picchu.png'
 import grand_canyon from '../../assets/grand_canyon.png'
+import santorini from '../../assets/santorini.png'
 import axios from 'axios';
 import analyzeClicks from '../../Analysis';
 
@@ -90,11 +91,11 @@ const TravelList = () => {
       </div>
 
       <div className="ListItem"> 
-        <Link to="/great_wall">
-          <img src={great_wall} alt=''></img> {/*Santorini Greece*/}
-          {/*Got the image for free from https://pixabay.com/photos/great-wall-of-china-mountains-8191166/ */}  
+        <Link to="/santorini" onClick={() => handleLinkClick('/santorini')}>
+          <img src={santorini} alt=''></img> {/*Santorini Greece*/}
+          {/*Got the image for free from https://www.istockphoto.com/photo/santorini-island-greece-gm1145450965-308317272?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_image&utm_content=srp_topbanner_media&utm_term=santorini */}  
           <div className="caption">
-            <p>Great Wall, Beijing, China</p>
+            <p>Santorini, Greece</p>
           </div>
         </Link>
       </div>

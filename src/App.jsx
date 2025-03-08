@@ -8,7 +8,7 @@ import Colosseum from './pages/Colosseum/Colosseum';
 import Great_wall from './pages/Great_wall/Great_wall';
 import Machu_picchu from './pages/Machu_picchu/Machu_picchu';
 import Grand_canyon from './pages/Grand_canyon/Grand_canyon';
-
+import Santorini from './pages/Santorini/Santorini';
 
 
 const App = () => {
@@ -23,6 +23,7 @@ const App = () => {
         <Route path="/great_wall" element={<Great_wall />} />
         <Route path="/machu_picchu" element={<Machu_picchu />} />
         <Route path="/grand_canyon" element={<Grand_canyon />} />
+        <Route path="/santorini" element={<Santorini />} />
       </Routes>
     </div>
   );
