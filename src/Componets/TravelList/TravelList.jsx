@@ -100,6 +100,16 @@ const TravelList = () => {
         </Link>
       </div>
 
+      <div className="ListItem"> 
+        <Link to="/tokyo_tower" onClick={() => handleLinkClick('/tokyo_tower')}>
+          <img src={santorini} alt=''></img> {/*Tokyo Tower – Tokyo, Japan*/}
+          {/*Got the image for free from https://www.istockphoto.com/photo/santorini-island-greece-gm1145450965-308317272?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_image&utm_content=srp_topbanner_media&utm_term=santorini */}  
+          <div className="caption">
+            <p>Tokyo Tower – Tokyo, Japan</p>
+          </div>
+        </Link>
+      </div>
+
     </div>
 
     

@@ -4,3 +4,4 @@
 {"link":"/machu_picchu","count":2}
 {"link":"/grand_canyon","count":1}
 {"link":"/santorini","count":1}
+{"link":"/tokyo_tower","count":1}
