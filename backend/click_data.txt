@@ -2,6 +2,7 @@
 {"link":"/colosseum","count":8}
 {"link":"/great_wall","count":4}
 {"link":"/machu_picchu","count":2}
-{"link":"/grand_canyon","count":1}
+{"link":"/grand_canyon","count":2}
 {"link":"/santorini","count":1}
-{"link":"/tokyo_tower","count":1}
+{"link":"/tokyo_tower","count":2}
+{"link":"/sydney_opera","count":1}

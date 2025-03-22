@@ -10,6 +10,7 @@ import Machu_picchu from './pages/Machu_picchu/Machu_picchu';
 import Grand_canyon from './pages/Grand_canyon/Grand_canyon';
 import Santorini from './pages/Santorini/Santorini';
 import Tokyo_tower from './pages/Tokyo_tower/tokyo_tower';
+import Sydney_opera from './pages/Sydney_oprea/Sydney_opera';
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/grand_canyon" element={<Grand_canyon />} />
         <Route path="/santorini" element={<Santorini />} />
         <Route path="/tokyo_tower" element={<Tokyo_tower />} />
+        <Route path="/sydney_opera" element={<Sydney_opera />} />
       </Routes>
     </div>
   );

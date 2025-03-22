@@ -110,6 +110,16 @@ const TravelList = () => {
         </Link>
       </div>
 
+      <div className="ListItem"> 
+        <Link to="/sydney_opera" onClick={() => handleLinkClick('/sydney_opera')}>
+          <img src={santorini} alt=''></img> {/*Sydney Opera House – Sydney, Australia*/}
+          {/*Got the image for free from https://www.istockphoto.com/photo/santorini-island-greece-gm1145450965-308317272?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_image&utm_content=srp_topbanner_media&utm_term=santorini */}  
+          <div className="caption">
+            <p>Sydney Opera House – Sydney, Australia</p>
+          </div>
+        </Link>
+      </div>
+
     </div>
 
     
