@@ -1,5 +1,5 @@
 {"link":"/eiffel_tower","count":4}
-{"link":"/colosseum","count":8}
+{"link":"/colosseum","count":9}
 {"link":"/great_wall","count":4}
 {"link":"/machu_picchu","count":2}
 {"link":"/grand_canyon","count":2}

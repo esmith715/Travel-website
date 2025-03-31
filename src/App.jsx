@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About_me from './pages/About_me';
 import FAQ from './pages/FAQ';
+import Chatbot from './Componets/Chatbot/Chatbot';
 import Eiffel_tower from './pages/Eiffel_tower/Eiffel_tower';
 import Colosseum from './pages/Colosseum/Colosseum';
 import Great_wall from './pages/Great_wall/Great_wall';
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/tokyo_tower" element={<Tokyo_tower />} />
         <Route path="/sydney_opera" element={<Sydney_opera />} />
       </Routes>
+      <Chatbot />
     </div>
   );
 }
