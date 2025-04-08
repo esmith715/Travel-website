@@ -12,6 +12,9 @@ import Grand_canyon from './pages/Grand_canyon/Grand_canyon';
 import Santorini from './pages/Santorini/Santorini';
 import Tokyo_tower from './pages/Tokyo_tower/tokyo_tower';
 import Sydney_opera from './pages/Sydney_oprea/Sydney_opera';
+import Mount_fuji from './pages/Mount_fuji/Mount_fuji';
+import Banff_np from './pages/Banff_np/Banff_np';
+import Christ_tr from './pages/Christ_tr/Christ_tr';
 
 
 const App = () => {
@@ -29,6 +32,9 @@ const App = () => {
         <Route path="/santorini" element={<Santorini />} />
         <Route path="/tokyo_tower" element={<Tokyo_tower />} />
         <Route path="/sydney_opera" element={<Sydney_opera />} />
+        <Route path="/mount_fuji" element={<Mount_fuji />} />
+        <Route path="/banff_np" element={<Banff_np />} />
+        <Route path="/christ_tr" element={<Christ_tr />} />
       </Routes>
       <Chatbot />
     </div>

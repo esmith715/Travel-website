@@ -1,8 +1,8 @@
-{"link":"/eiffel_tower","count":4}
-{"link":"/colosseum","count":9}
-{"link":"/great_wall","count":4}
-{"link":"/machu_picchu","count":2}
-{"link":"/grand_canyon","count":2}
+{"link":"/eiffel_tower","count":6}
+{"link":"/colosseum","count":10}
+{"link":"/great_wall","count":6}
+{"link":"/machu_picchu","count":3}
+{"link":"/grand_canyon","count":3}
 {"link":"/santorini","count":1}
 {"link":"/tokyo_tower","count":2}
 {"link":"/sydney_opera","count":1}

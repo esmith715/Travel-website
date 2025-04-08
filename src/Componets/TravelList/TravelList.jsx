@@ -120,6 +120,36 @@ const TravelList = () => {
         </Link>
       </div>
 
+      <div className="ListItem"> 
+        <Link to="/mount_fuji" onClick={() => handleLinkClick('/mount_fuji')}>
+          <img src={santorini} alt=''></img> {/*Mount Fuji – Shizuoka, Japan*/}
+          {/*Got the image for free from  */}  
+          <div className="caption">
+            <p>Mount Fuji – Shizuoka, Japan</p>
+          </div>
+        </Link>
+      </div>
+
+      <div className="ListItem"> 
+        <Link to="/banff_np" onClick={() => handleLinkClick('/banff_np')}>
+          <img src={santorini} alt=''></img> {/*Banff National Park – Alberta, Canada*/}
+          {/*Got the image for free from  */}  
+          <div className="caption">
+            <p>Banff National Park – Alberta, Canada</p>
+          </div>
+        </Link>
+      </div>
+
+      <div className="ListItem"> 
+        <Link to="/christ_tr" onClick={() => handleLinkClick('/christ_tr')}>
+          <img src={santorini} alt=''></img> {/*Christ the Redeemer – Rio de Janeiro, Brazil*/}
+          {/*Got the image for free from  */}  
+          <div className="caption">
+            <p>Christ the Redeemer – Rio de Janeiro, Brazil</p>
+          </div>
+        </Link>
+      </div>
+
     </div>
 
     

@@ -86,7 +86,7 @@ const Chatbot = () => {
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask me a question..."
             />
-            <button onClick={handleSend}>Send</button>
+            <button onClick={handleSend}>Send</button> {/*send all questions asked by users to a json file. */}
           </div>
         </div>
       )}
