@@ -1,0 +1,58 @@
+.container_box form label img{
+    width: 25px;
+    margin-left: 10px;
+}
+.container_box form input,  .container_box form textarea{
+    display: block;
+    width: 100%;
+    background: #EBECFE;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+}
+.btn.dark-btn {
+    background-color: #007bff; /* Blue color */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn.dark-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.container_box span{
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.questions-section {
+    margin-top: 30px;
+  }
+  
+  .question-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .question-item p {
+    margin: 5px 0;
+  }
+  
+  .question-item textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+  }

@@ -15,6 +15,7 @@ const Banff_np = () => {
       <Navbar></Navbar>
 
       <div className='background-container' style={{ backgroundImage: `linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(${banff_np_back})` }}>
+        {/*got the image for free from https://www.banfflakelouise.com/experiences/moraine-lake */}
         <div className="eiffel-text">
           <h1>Welcome to Banff National Park!</h1>
           <p>Please have fun exploring.</p>

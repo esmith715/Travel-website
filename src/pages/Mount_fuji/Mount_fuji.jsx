@@ -15,6 +15,7 @@ const Mount_fuji = () => {
       <Navbar></Navbar>
 
       <div className='background-container' style={{ backgroundImage: `linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(${mount_fuji_back})` }}>
+        {/*got image for free from https://www.locationscout.net/japan/3611-mount-fuji */}
         <div className="eiffel-text">
           <h1>Welcome to Mount Fuji!</h1>
           <p>Please have fun exploring.</p>

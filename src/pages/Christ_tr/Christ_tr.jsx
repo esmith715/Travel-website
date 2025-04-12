@@ -15,6 +15,7 @@ const Christ_tr = () => {
       <Navbar></Navbar>
 
       <div className='background-container' style={{ backgroundImage: `linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(${christ_tr_back})` }}>
+        {/* Got the image for free from https://stock.adobe.com/search?k=christ+the+redeemer+rio&asset_id=584831187 */}
         <div className="eiffel-text">
           <h1>Welcome to Christ the Redeemer!</h1>
           <p>Please have fun exploring.</p>

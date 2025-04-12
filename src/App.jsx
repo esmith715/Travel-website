@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About_me from './pages/About_me';
-import FAQ from './pages/FAQ';
+import FAQ from './pages/FAQ/FAQ';
 import Chatbot from './Componets/Chatbot/Chatbot';
 import Eiffel_tower from './pages/Eiffel_tower/Eiffel_tower';
 import Colosseum from './pages/Colosseum/Colosseum';
