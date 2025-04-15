@@ -26,6 +26,7 @@ import { useEffect, useState } from 'react'
             <li><Link to="/" className='btn'>Home</Link></li>
             <li><Link to="/about_me" className='btn'>About Me</Link></li>
             <li><Link to="/faq" className='btn'>FAQ</Link></li>
+            <li><Link to="/updates" className='btn'>Updates</Link></li>
         </ul>
     </nav>
   )

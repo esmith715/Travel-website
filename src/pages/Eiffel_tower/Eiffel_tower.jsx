@@ -5,24 +5,45 @@ import TravelList from '../../Componets/TravelList/TravelList';
 import Title from '../../Componets/Title/Title';
 import Hero from '../../Componets/Hero/Hero';
 import french_wallpaper from '../../assets/french_wallpaper.png'; // Import the background image
+import axios from 'axios';
 
 const EiffelTower = () => {
   useEffect(() => {
+    const startTime = Date.now(); // Record the time when the user enters the page
+
+    const logTimeSpent = async () => {
+      const endTime = Date.now(); // Record the time when the user leaves the page
+      const timeSpent = Math.floor((endTime - startTime) / 1000); // Calculate time spent in seconds
+
+      // Send the time spent data to the backend
+      await axios.post('http://localhost:5000/api/time-spent', {
+        link: '/eiffel_tower', // Unique identifier for the page
+        timeSpent,
+      });
+    };
+
+    // Log time spent when the user leaves the page
+    window.addEventListener('beforeunload', logTimeSpent);
+
     window.scrollTo(0, 0); // Scroll to the top of the page
+
+    return () => {
+      window.removeEventListener('beforeunload', logTimeSpent);
+      logTimeSpent(); // Log time spent when the component unmounts
+    };
   }, []);
 
   return (
     <div>
       <Navbar />
       <div className='background-container' style={{ backgroundImage: `linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(${french_wallpaper})` }}>
-        {/*Got the image from here https://pngtree.com/freebackground/vector-cartoon-france-sights-and-objects-background-or-pattern-illustration_1831726.html */}
         <div className="eiffel-text">
           <h1>Welcome to the Eiffel Tower!</h1>
           <p>Please have fun exploring.</p>
         </div>
       </div>
 
-      <div classname = "description">
+      <div className="description">
         <h3>Why You Should Visit the Eiffel Tower in France</h3>
         <ul>
           <li>
@@ -42,19 +63,17 @@ const EiffelTower = () => {
           </li>
         </ul>
 
-
         <h2>The Majestic Eiffel Tower: A Must-Visit Attraction</h2>
-        <p>Nestled in the heart of Paris, the Eiffel Tower stands as an enduring symbol of romance, innovation, and French elegance. Constructed for the 1889 World's Fair, this iconic landmark has transcended its initial purpose, becoming an eternal beacon drawing millions of visitors each year.
-          Ascending the Eiffel Tower is an experience like no other. As you make your way up, each level offers a new perspective, culminating in breathtaking, panoramic views of the City of Light. Imagine sipping champagne at the summit while gazing over the Seine River and Paris's stunning skyline—it’s a memory that will stay with you forever. 
-          Beyond its architectural grandeur, the Eiffel Tower is steeped in history. It was once the tallest man-made structure in the world and has witnessed significant events and cultural milestones. A visit to its museum or a guided tour will enrich your understanding of its historical and cultural significance.
-          Moreover, the Eiffel Tower's surrounding area is a vibrant hub of Parisian life. Take a leisurely stroll along the Champ de Mars, enjoy a picnic, or indulge in a delightful meal at one of the nearby cafés. As the sun sets, watch as the Tower illuminates, its dazzling lights creating a magical atmosphere that's simply enchanting.
-          For couples, the Eiffel Tower offers an unparalleled romantic setting. Whether it's a proposal, anniversary celebration, or just a beautiful moment shared, the Tower's ambiance is undeniably romantic, making it a must-visit destination.
+        <p>
+          Nestled in the heart of Paris, the Eiffel Tower stands as an enduring symbol of romance, innovation, and French elegance. Constructed for the 1889 World's Fair, this iconic landmark has transcended its initial purpose, becoming an eternal beacon drawing millions of visitors each year.
+          Ascending the Eiffel Tower is an experience like no other. As you make your way up, each level offers a new perspective, culminating in breathtaking, panoramic views of the City of Light. Imagine sipping champagne at the summit while gazing over the Seine River and Paris's stunning skyline—it’s a memory that will stay with you forever.
         </p>
 
         <h2>Picture-Perfect Moments Await</h2>
-        <p>No visit to Paris is complete without a trip to the Eiffel Tower. Its combination of historical charm, modern marvel, and enchanting views makes it an unforgettable destination. So, pack your bags, bring your camera, and get ready to be mesmerized by the splendor of the Eiffel Tower!</p>
+        <p>
+          No visit to Paris is complete without a trip to the Eiffel Tower. Its combination of historical charm, modern marvel, and enchanting views makes it an unforgettable destination. So, pack your bags, bring your camera, and get ready to be mesmerized by the splendor of the Eiffel Tower!
+        </p>
       </div>
-
 
       <div className="container_box">
         <Title subtitle='Want more options?' title='Look here!' />
@@ -62,6 +81,6 @@ const EiffelTower = () => {
       </div>
     </div>
   );
-}
+};
 
 export default EiffelTower;

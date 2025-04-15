@@ -8,12 +8,12 @@ import machu_picchu from '../../assets/machu_picchu.png'
 import grand_canyon from '../../assets/grand_canyon.png'
 import santorini from '../../assets/santorini.png'
 import axios from 'axios';
-import analyzeClicks from '../../Analysis';
-
+import analyzeClicksAndTime from '../../Analysis';
 
 
 const TravelList = () => {
   const [clickData, setClickData] = useState([]);
+  const [timeData, setTimeData] = useState([]);
 
   const handleLinkClick = async (link) => {
     await axios.post('http://localhost:5000/api/click', { link });
@@ -26,15 +26,21 @@ const TravelList = () => {
     setClickData(response.data);
   };
 
+  const fetchTimeData = async () => {
+    const response = await axios.get('http://localhost:5000/api/time-spent');
+    setTimeData(response.data || []); // Ensure timeData is always an array
+  };
+
   useEffect(() => {
     fetchClickData();
+    fetchTimeData();
   }, []);
 
   useEffect(() => {
-    if (clickData.length > 0) {
-      analyzeClicks(clickData);
+    if (clickData.length > 0 && timeData.length > 0) {
+      analyzeClicksAndTime(clickData, timeData);
     }
-  }, [clickData]);
+  }, [clickData, timeData]);
 
 
   return (

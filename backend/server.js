@@ -139,3 +139,41 @@ app.get('/api/answered-questions', async (req, res) => {
     res.status(200).send({ submissions: [] });
   }
 });
+
+app.post('/api/time-spent', async (req, res) => {
+  const { link, timeSpent } = req.body;
+  const filePath = path.join(__dirname, 'time_data.json');
+
+  // Read existing data from the file
+  let timeData = [];
+  if (fs.existsSync(filePath)) {
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    timeData = JSON.parse(fileContent);
+  }
+
+  // Update time spent or add new link
+  let page = timeData.find(item => item.link === link);
+  if (page) {
+    page.totalTimeSpent += timeSpent;
+    page.visits += 1;
+  } else {
+    page = { link, totalTimeSpent: timeSpent, visits: 1 };
+    timeData.push(page);
+  }
+
+  // Write updated data back to the file
+  fs.writeFileSync(filePath, JSON.stringify(timeData, null, 2));
+
+  res.send(page);
+});
+
+app.get('/api/time-spent', async (req, res) => {
+  const filePath = path.join(__dirname, 'time_data.json');
+  if (fs.existsSync(filePath)) {
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const timeData = JSON.parse(fileContent);
+    res.send(timeData);
+  } else {
+    res.send([]);
+  }
+});

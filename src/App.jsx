@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About_me from './pages/About_me';
 import FAQ from './pages/FAQ/FAQ';
+import Updates from './pages/Updates/Updates';
 import Chatbot from './Componets/Chatbot/Chatbot';
 import Eiffel_tower from './pages/Eiffel_tower/Eiffel_tower';
 import Colosseum from './pages/Colosseum/Colosseum';
@@ -24,6 +25,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="/about_me" element={<About_me />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/updates" element={<Updates />} />
         <Route path="/eiffel_tower" element={<Eiffel_tower />} />
         <Route path="/colosseum" element={<Colosseum />} />
         <Route path="/great_wall" element={<Great_wall />} />
