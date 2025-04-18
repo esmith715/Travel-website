@@ -7,6 +7,11 @@ import great_wall from '../../assets/Great_wall.png'
 import machu_picchu from '../../assets/machu_picchu.png'
 import grand_canyon from '../../assets/grand_canyon.png'
 import santorini from '../../assets/santorini.png'
+import tokyo_tower from '../../assets/tokyo_tower.png'
+import sydney_op from '../../assets/sydney_op.png'
+import mount_fuji from '../../assets/mount_fuji.png'
+import banff_np from '../../assets/banff_np.png'
+import christ_tr from '../../assets/christ_tr.png'
 import axios from 'axios';
 import analyzeClicksAndTime from '../../Analysis';
 
@@ -108,8 +113,8 @@ const TravelList = () => {
 
       <div className="ListItem"> 
         <Link to="/tokyo_tower" onClick={() => handleLinkClick('/tokyo_tower')}>
-          <img src={santorini} alt=''></img> {/*Tokyo Tower – Tokyo, Japan*/}
-          {/*Got the image for free from https://www.istockphoto.com/photo/santorini-island-greece-gm1145450965-308317272?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_image&utm_content=srp_topbanner_media&utm_term=santorini */}  
+          <img src={tokyo_tower} alt=''></img> {/*Tokyo Tower – Tokyo, Japan*/}
+          {/*no working link to image got it off of google */}  
           <div className="caption">
             <p>Tokyo Tower – Tokyo, Japan</p>
           </div>
@@ -118,8 +123,8 @@ const TravelList = () => {
 
       <div className="ListItem"> 
         <Link to="/sydney_opera" onClick={() => handleLinkClick('/sydney_opera')}>
-          <img src={santorini} alt=''></img> {/*Sydney Opera House – Sydney, Australia*/}
-          {/*Got the image for free from https://www.istockphoto.com/photo/santorini-island-greece-gm1145450965-308317272?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_image&utm_content=srp_topbanner_media&utm_term=santorini */}  
+          <img src={sydney_op} alt=''></img> {/*Sydney Opera House – Sydney, Australia*/}
+          {/*Got the image for free from https://commons.wikimedia.org/wiki/File:Sydneyoperahouse_at_night.jpg */}  
           <div className="caption">
             <p>Sydney Opera House – Sydney, Australia</p>
           </div>
@@ -128,8 +133,8 @@ const TravelList = () => {
 
       <div className="ListItem"> 
         <Link to="/mount_fuji" onClick={() => handleLinkClick('/mount_fuji')}>
-          <img src={santorini} alt=''></img> {/*Mount Fuji – Shizuoka, Japan*/}
-          {/*Got the image for free from  */}  
+          <img src={mount_fuji} alt=''></img> {/*Mount Fuji – Shizuoka, Japan*/}
+          {/*Got the image for free from https://www.mount-fuji.com/timings/ */}  
           <div className="caption">
             <p>Mount Fuji – Shizuoka, Japan</p>
           </div>
@@ -138,8 +143,8 @@ const TravelList = () => {
 
       <div className="ListItem"> 
         <Link to="/banff_np" onClick={() => handleLinkClick('/banff_np')}>
-          <img src={santorini} alt=''></img> {/*Banff National Park – Alberta, Canada*/}
-          {/*Got the image for free from  */}  
+          <img src={banff_np} alt=''></img> {/*Banff National Park – Alberta, Canada*/}
+          {/*Got the image for free from  https://www.travelandleisure.com/banff-national-park-canada-winter-guide-8786744*/}  
           <div className="caption">
             <p>Banff National Park – Alberta, Canada</p>
           </div>
@@ -148,8 +153,8 @@ const TravelList = () => {
 
       <div className="ListItem"> 
         <Link to="/christ_tr" onClick={() => handleLinkClick('/christ_tr')}>
-          <img src={santorini} alt=''></img> {/*Christ the Redeemer – Rio de Janeiro, Brazil*/}
-          {/*Got the image for free from  */}  
+          <img src={christ_tr} alt=''></img> {/*Christ the Redeemer – Rio de Janeiro, Brazil*/}
+          {/*Got the image for free from  https://engoo.com/app/daily-news/article/the-story-of-christ-the-redeemer-rios-famous-statue/vpLxyKXaEe-K_SPwuDCayA*/}  
           <div className="caption">
             <p>Christ the Redeemer – Rio de Janeiro, Brazil</p>
           </div>

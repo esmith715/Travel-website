@@ -1,12 +1,57 @@
 [
   {
     "link": "/eiffel_tower",
-    "totalTimeSpent": 50,
-    "visits": 14
+    "totalTimeSpent": 187,
+    "visits": 30
   },
   {
     "link": "/colosseum",
-    "totalTimeSpent": 45,
-    "visits": 16
+    "totalTimeSpent": 46,
+    "visits": 20
+  },
+  {
+    "link": "/great_wall",
+    "totalTimeSpent": 99,
+    "visits": 6
+  },
+  {
+    "link": "/machu_picchu",
+    "totalTimeSpent": 1,
+    "visits": 2
+  },
+  {
+    "link": "/grand_canyon",
+    "totalTimeSpent": 1,
+    "visits": 2
+  },
+  {
+    "link": "/santorini",
+    "totalTimeSpent": 1,
+    "visits": 2
+  },
+  {
+    "link": "/tokyo_tower",
+    "totalTimeSpent": 1,
+    "visits": 2
+  },
+  {
+    "link": "/sydney_opera",
+    "totalTimeSpent": 2,
+    "visits": 2
+  },
+  {
+    "link": "/mount_fuji",
+    "totalTimeSpent": 1,
+    "visits": 2
+  },
+  {
+    "link": "/banff_np",
+    "totalTimeSpent": 2,
+    "visits": 2
+  },
+  {
+    "link": "/christ_tr",
+    "totalTimeSpent": 2,
+    "visits": 2
   }
 ]

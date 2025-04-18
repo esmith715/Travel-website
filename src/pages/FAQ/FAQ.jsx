@@ -73,7 +73,7 @@ function FAQ() {
   return (
     <div className="container_box">
       <Navbar />
-      <Title subtitle="Have a question" title="Submit a ticket" />
+      <Title subtitle="Have a question or a Comment" title="Leave a response" />
       <div className="contact-col">
         <form onSubmit={handleSubmit}>
           <label>Your Name</label>
@@ -120,23 +120,25 @@ function FAQ() {
       </div>
 
       <div className="questions-section">
-        <h2>Unanswered Questions</h2>
-        {unansweredQuestions.map((question) => (
-          <div key={question.id} className="question-item">
-            <p><strong>Question:</strong> {question.message}</p>
-            <div>
-              <textarea
-                placeholder="Write a response..."
-                rows="3"
-                value={responseInputs[question.id] || ''}
-                onChange={(e) => handleResponseChange(question.id, e.target.value)}
-              ></textarea>
-              <button onClick={() => handleResponseSubmit(question.id)}>Submit</button>
+        <h2>Unanswered Questions or Responses</h2>
+        {unansweredQuestions
+          .filter((question) => question.name !== 'Chatbot User') // Exclude questions from "Chatbot User"
+          .map((question) => (
+            <div key={question.id} className="question-item">
+              <p><strong>Question:</strong> {question.message}</p>
+              <div>
+                <textarea
+                  placeholder="Write a response..."
+                  rows="3"
+                  value={responseInputs[question.id] || ''}
+                  onChange={(e) => handleResponseChange(question.id, e.target.value)}
+                ></textarea>
+                <button onClick={() => handleResponseSubmit(question.id)}>Submit</button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
 
-        <h2>Answered Questions</h2>
+        <h2>Answered Questions and Responses</h2>
         {answeredQuestions.map((question) => (
           <div key={question.id} className="question-item">
             <p><strong>Question:</strong> {question.message}</p>

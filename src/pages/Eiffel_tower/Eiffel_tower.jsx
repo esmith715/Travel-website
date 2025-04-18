@@ -34,7 +34,7 @@ const EiffelTower = () => {
   }, []);
 
   return (
-    <div>
+    <div className="eiffel-page">
       <Navbar />
       <div className='background-container' style={{ backgroundImage: `linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(${french_wallpaper})` }}>
         <div className="eiffel-text">

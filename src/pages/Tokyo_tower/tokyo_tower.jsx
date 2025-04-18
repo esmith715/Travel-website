@@ -3,11 +3,33 @@ import Navbar from '../../Componets/NavBar/Navbar';
 import './tokyo_tower.css';
 import TravelList from '../../Componets/TravelList/TravelList';
 import Title from '../../Componets/Title/Title';
+import axios from 'axios';
 import tokyo_tower_back from '../../assets/tokyo_tower_back.png'; // Import the background image
 
 const Tokyo_tower = () => {
   useEffect(() => {
+    const startTime = Date.now(); // Record the time when the user enters the page
+
+    const logTimeSpent = async () => {
+      const endTime = Date.now(); // Record the time when the user leaves the page
+      const timeSpent = Math.floor((endTime - startTime) / 1000); // Calculate time spent in seconds
+
+      // Send the time spent data to the backend
+      await axios.post('http://localhost:5000/api/time-spent', {
+        link: '/tokyo_tower', // Unique identifier for the page
+        timeSpent,
+      });
+    };
+
+    // Log time spent when the user leaves the page
+    window.addEventListener('beforeunload', logTimeSpent);
+
     window.scrollTo(0, 0); // Scroll to the top of the page
+
+    return () => {
+      window.removeEventListener('beforeunload', logTimeSpent);
+      logTimeSpent(); // Log time spent when the component unmounts
+    };
   }, []);
 
   return (

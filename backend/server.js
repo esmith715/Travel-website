@@ -51,7 +51,7 @@ app.listen(5000, () => {
 });
 
 app.post('/api/submit-form', async (req, res) => {
-  const { name, email, phone, message } = req.body;
+  const { name, email, phone, message, source } = req.body; // Include source
   const filePath = path.join(__dirname, 'unanswered_text.json');
 
   // Read existing data from the file
@@ -69,7 +69,8 @@ app.post('/api/submit-form', async (req, res) => {
     email,
     phone,
     message,
-    response: null, // Placeholder for the response
+    source: source || 'faq', // Default to 'faq' if no source is provided
+    response: null // Placeholder for the response
   };
   formData.submissions.push(newSubmission);
 

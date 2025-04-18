@@ -114,3 +114,15 @@
     cursor: nwse-resize;
     border-radius: 50%;
   }
+
+  .chatbot-link {
+    color: #007bff; /* Primary blue color */
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+
+  .chatbot-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }
